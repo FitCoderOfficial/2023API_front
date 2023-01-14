@@ -1,17 +1,21 @@
 
 import React from 'react';
 import Link from 'next/link';
+import use from 'react';
 
-// import { urlFor } from '../lib/client';
+// import { api } from '../lib/client';
 
-const HeroBanner = ({ heroBanner }) => {
+const HeroBanner = ({ products }) => {
+  const result = api.get('/api/products');
+  console.log(result.data)  
   return (
     <div className="hero-banner-container">
       <div>
         <p className="beats-solo">텍스트</p>
         <h3>미드</h3>
-        <h1>라지</h1>
-        {/* <img src={urlFor(heroBanner.image)} alt="headphones" className="hero-banner-image" /> */}
+        <h1>물건</h1>
+     
+        {/* <img src={getProduct(products.image)} alt="headphones" className="hero-banner-image" /> */}
 
         <div>
           <Link href={`/product/`}>
