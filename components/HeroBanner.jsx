@@ -6,8 +6,6 @@ import use from 'react';
 // import { api } from '../lib/client';
 
 const HeroBanner = ({ products }) => {
-  const result = api.get('/api/products');
-  console.log(result.data)  
   return (
     <div className="hero-banner-container">
       <div>
