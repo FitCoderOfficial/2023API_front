@@ -27,7 +27,7 @@ const LoginPage = () => {
         <div className="container">
           <div className="back-button-section">
             <Link href="/products">
-              <i className="icon-left"></i> 홈으로
+              <i className="icon-left"></i> 둘러보기
             </Link>
           </div>
 

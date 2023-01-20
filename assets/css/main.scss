@@ -353,15 +353,18 @@ h1,h2,h3,h4,h5 {
     .site-nav__btn {
       padding: 13px 18px;
       width: 100%;
-      font-size: 15px;
-      font-weight: 500;
+      color: #000;
+      font-size: 18px;
+      font-weight: 700;
       text-align: left;
+      font-family: "Noto Sans KR";
       @include breakpoint(tablet-lg) {
         display: none;
       }
     }
     &.site-nav--open {
       right: 0;
+      
     }
     a {
       font-size: 18px;
@@ -657,20 +660,39 @@ h1,h2,h3,h4,h5 {
         margin-top: 0;
       }
       h2 {
-        font-size: 36px;
+        font-size: 45px;
         color: #FFF;
-        font-weight: 600;
-        line-height: 120%;
-        margin-bottom: 45px;
+        font-weight: 900;
+        line-height: 110%;
+        margin-top: 50px;
+        // margin-bottom: 45px;
+        font-family: 'Noto Sans KR';
         @include breakpoint(phone) {
-          font-size: 64px;
+          font-size: 80px;
           width: 600px;
+          font-family: 'Noto Sans KR';
+        }
+      }
+      h3 {
+        font-size: 45px;
+        color: #FFF;
+        font-weight: 100;
+        line-height: 110%;
+        margin-top: 10px;
+        margin-bottom: 45px;
+        font-family: 'Noto Sans KR';
+        @include breakpoint(phone) {
+          font-size: 30px;
+          width: 800px;
+          font-family: 'Noto Sans KR';
         }
       }
       .btn-shop {
         display: flex;
         color: #FFF;
         align-items: center;
+        font-size: 18px;
+        font-family: "Noto Sans KR";
         i {
           justify-content: center;
           align-items: center;

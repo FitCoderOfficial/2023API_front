@@ -2,12 +2,14 @@ import Head from 'next/head';
 import Header from 'components/header';
 import { useRouter } from 'next/router';
 
+
 type LayoutType = {
   title?: string;
   children?: React.ReactNode;
 }
 
-export default ({ children, title = '홀리플렉스 : HOLY FLEX' }: LayoutType) => {
+export default ({ children, title = '홀리플렉스 : HOLY FLEX' }: LayoutType,) => {
+
   const router = useRouter();
   const pathname = router.pathname;
 
@@ -25,3 +27,4 @@ export default ({ children, title = '홀리플렉스 : HOLY FLEX' }: LayoutType)
     </div>
   )
 }
+

@@ -7,7 +7,7 @@ const RegisterPage = () => (
       <div className="container">
         <div className="back-button-section">
           <Link href="/products">
-            <i className="icon-left"></i> Back to store
+            <i className="icon-left"></i> 둘러보기
           </Link>
         </div>
 
@@ -18,19 +18,15 @@ const RegisterPage = () => (
           
           <form className="form">
             <div className="form__input-row">
-              <input className="form__input" placeholder="First Name" type="text" />
+              <input className="form__input" placeholder="이름" type="text" />
             </div>
             
             <div className="form__input-row">
-              <input className="form__input" placeholder="Last Name" type="text" />
+              <input className="form__input" placeholder="이메일" type="text" />
             </div>
             
             <div className="form__input-row">
-              <input className="form__input" placeholder="Email" type="text" />
-            </div>
-            
-            <div className="form__input-row">
-              <input className="form__input" type="Password" placeholder="Password" />
+              <input className="form__input" type="Password" placeholder="비밀번호" />
             </div>
 
             <div className="form__info">
@@ -38,16 +34,16 @@ const RegisterPage = () => (
                 <label htmlFor="check-signed-in" className={`checkbox checkbox--sm`}>
                   <input name="signed-in" type="checkbox" id="check-signed-in" />
                   <span className="checkbox__check"></span>
-                    <p>I agree to the Google Terms of Service and Privacy Policy</p>
+                    <p>서비스 약관 및 개인 정보 보호 정책에 동의합니다</p>
                 </label>
               </div>
             </div>
 
-            <button type="button" className="btn btn--rounded btn--yellow btn-submit">Sign up</button>
+            <button type="button" className="btn btn--rounded btn--yellow btn-submit">회원가입</button>
 
             <p className="form__signup-link">
               <Link href="/login">
-                Are you already a member?
+                이미 회원이신가요?
               </Link>
             </p>
           </form>

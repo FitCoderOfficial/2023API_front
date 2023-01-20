@@ -30,7 +30,7 @@ const ForgotPassword = () => {
           </div>
 
           <div className="form-block">
-            <h2 className="form-block__title">Forgot your password?</h2>
+            <h2 className="form-block__title">비밀번호 찾기</h2>
             <p className="form-block__description">Enter your email or phone number and recover your account</p>
             
             <form className="form" onSubmit={handleSubmit(onSubmit)}>

@@ -1,7 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {EffectFade, Navigation} from 'swiper';
+import Introdetail from './introdetail';
+
 
 SwiperCore.use([EffectFade, Navigation]);
+
 
 const PageIntro = () => {
 
@@ -12,8 +15,9 @@ const PageIntro = () => {
           <div className="page-intro__slide" style={{ backgroundImage: "url('/images/slide-1.jpg')" }}>
             <div className="container">
               <div className="page-intro__slide__content">
-                <h2>Sale of the summer collection</h2>
-                <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a>
+                <h2>새해 맞이 <br/>폭탄 세일중</h2>
+                <h3> 오늘 주문 내일 도착 </h3>
+                <a href="#" className="btn-shop"><i className="icon-right"></i>상품 보기</a>
               </div>
             </div>
           </div>
@@ -23,45 +27,21 @@ const PageIntro = () => {
           <div className="page-intro__slide" style={{ backgroundImage: "url('/images/slide-2.jpg')" }}>
             <div className="container">
               <div className="page-intro__slide__content">
-                <h2>Make your house into a home</h2>
-                <a href="#" className="btn-shop"><i className="icon-right"></i>Shop now</a>
+                <h2>데일리룩 <br/>득템 찬스 75%</h2>
+                <h3> 설레는 선물전 </h3>
+                <a href="#" className="btn-shop"><i className="icon-right"></i>상품 보기</a>
               </div>
             </div>
           </div>
         </SwiperSlide>
       </Swiper>
 
-      <div className="shop-data">
-        <div className="container">
-          <ul className="shop-data__items">
-            <li>
-              <i className="icon-shipping"></i>
-              <div className="data-item__content">
-                <h4>Free Shipping</h4>
-                <p>On purchases over $199</p>
-              </div>
-            </li>
-            
-            <li>
-              <i className="icon-shipping"></i>
-              <div className="data-item__content">
-                <h4>99% Satisfied Customers</h4>
-                <p>Our clients' opinions speak for themselves</p>
-              </div>
-            </li>
-            
-            <li>
-              <i className="icon-cash"></i>
-              <div className="data-item__content">
-                <h4>Originality Guaranteed</h4>
-                <p>30 days warranty for each product from our store</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+      {/* <Introdetail /> */}
     </section>
   )
 };
+
+
+
 
 export default PageIntro
