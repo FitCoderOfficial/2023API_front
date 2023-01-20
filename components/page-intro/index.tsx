@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {EffectFade, Navigation} from 'swiper';
-import Introdetail from './introdetail';
+// import Introdetail from './introdetail';
 
 
 SwiperCore.use([EffectFade, Navigation]);
